@@ -11,3 +11,7 @@ be translated into an identifier. In order to achieve this:
 - Newick trees (treeCollection): string with the trees in format 8 (newick). One for all the organisms.
 
 Finally, the new database will have this form (example for one document, in other words, a natural product).
+
+(here a document)
+
+There are also two jupyter notebooks similar to the final code. They were used to see outputs and chech the proper code functioning.
