@@ -14,4 +14,5 @@ Finally, the new database will have this form (example for one document, in othe
 
 (here a document)
 
-There are also two jupyter notebooks similar to the final code. They were used to see outputs and chech the proper code functioning.
+There are also two jupyter notebooks similar to the final code. They were used to see outputs and chech the proper code functioning. 
+Also, there is a file with the state of the collection.
