@@ -217,7 +217,7 @@ def dataCollection():
     return tables
 
 
-def createNewDatabase(tables):
+def createNewCollection(tables):
     ''' Creation of the new curated database 
     It will appear only the ids that can be translated to name and the name that has a id'''
     col = db.curatedDB
@@ -368,15 +368,15 @@ def treeCollection(collection_new, diccionary_interesting_ranks):
             tree_fromncbi = ncbi.get_topology(x)
             tree_string = tree_fromncbi.write(format=8)
             collection_new.update_one(
-                {'_id': key}, {'$set': {'newick_tree': tree_string}})
+                {'coconut_id': key}, {'$set': {'newick_tree': tree_string}})
         except:
             print(str(key) + ' ' + str(len(x)))
 
 
 def main():
     tables = dataCollection()
-    col = createNewDatabase(tables)
-    dic_interesting_ranks = lineageCollection(col)
+    col = createNewCollction(tables)
+    # dic_interesting_ranks = lineageCollection(col)
     # treeCollection(col, dic_interesting_ranks)
 
 
