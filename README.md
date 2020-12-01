@@ -15,6 +15,22 @@ Some explanations to run the code:
 
 Finally, the new database will have this form (example for one document, in other words, a natural product).
 
-(here a document)
+                                      {'_id': ObjectId('5fc654b218fab063817b7863'),
+                                       'coconut_id': 'CNP0221451',
+                                       'tax_classification': [{'taxonomy': [{'name': 'Bacteria',
+                                           'taxid': 2,
+                                           'rank': 'superkingdom'}]},
+                                        {'taxonomy': [{'name': 'Lysobacter sp.',
+                                           'taxid': 72226,
+                                           'rank': 'species'}]}],
+                                       'lineage': [{'superkingdom': 2},
+                                        {'superkingdom': 2,
+                                         'kingdom': 1224,
+                                         'phylum': 1236,
+                                         'class': 135614,
+                                         'order': 32033,
+                                         'family': 68,
+                                         'genus': 72226}],
+                                       'newick_tree': '(72226);'}
 
 There are also two jupyter notebooks similar to the final code. They were used to see outputs and chech the proper code functioning. Also, there is a file with the state of the collection.
