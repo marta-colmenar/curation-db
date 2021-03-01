@@ -375,7 +375,7 @@ def treeCollection(collection_new, diccionary_interesting_ranks):
 
 def main():
     tables = dataCollection()
-    col = createNewCollction(tables)
+    col = createNewCollection(tables)
     # dic_interesting_ranks = lineageCollection(col)
     # treeCollection(col, dic_interesting_ranks)
 
